@@ -9,6 +9,8 @@ before_install:
 script:
   - npm run build
   - npm run build:docs
+before_deploy:
+  - cd dist/time-select
 deploy:
   - provider: npm
     skip_cleanup: true
