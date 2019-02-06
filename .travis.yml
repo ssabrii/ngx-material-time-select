@@ -9,7 +9,7 @@ before_install:
 script:
   - npm run build
   - npm run build:docs
-before_deploy:
+before_script:
   - cd dist/time-select
   - pwd
 deploy:
